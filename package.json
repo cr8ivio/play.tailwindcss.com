@@ -1,7 +1,7 @@
 {
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "NODE_OPTIONS=--openssl-legacy-provider next dev",
     "build:plugins": "node src/scripts/buildBuiltinPlugins.js",
     "build": "npm run build:plugins && next build",
     "start": "next start"
